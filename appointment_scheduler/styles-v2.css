@@ -25,6 +25,7 @@ header
     left: 0;
     z-index: 2;
 }
+
  nav ul
 {
     display: flex;
@@ -66,6 +67,7 @@ nav ul a:last-child
 {
     position: sticky;
 }
+
 main{
     padding-top: 100px;
 }
@@ -96,6 +98,17 @@ main{
     color: white;
     margin-bottom: 40px;
     animation: scaleIn 2s 1s normal;
+  }
+  .side
+  {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+ 
+  }
+  .side p
+  {
+    padding-right: 80px;
   }
 /*  
   .hero .btn {
@@ -354,7 +367,7 @@ main{
     margin-right: 35%;
     margin-top: 15%;
     margin-bottom: 15%;
-    background: #5C323E;
+    background-color: #5C323E;
     box-sizing: border-box;
     box-shadow: 0 15px 25px rgba(0,0,0,.6);
     border-radius: 10px;
