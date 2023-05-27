@@ -1,0 +1,350 @@
+body
+{
+    margin:0;
+    padding:0;
+     background: #A82743; 
+    
+}
+svg
+{
+  width: 100%;
+  height: 120vh;
+  position: absolute;
+  z-index: -1;
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A82743;
+    position: fixed;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+ nav ul
+{
+    display: flex;
+    list-style:none;
+    justify-content: space-evenly;
+
+}
+ nav ul a
+{
+    padding-left: 20px;
+    text-decoration:none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    
+    font-family: 'Abril Fatface', cursive;
+    color: white;
+    
+}
+ nav ul a:hover
+{
+    
+    color:  #5C323E;
+    text-decoration: underline;
+    text-decoration-color: #5C323E;
+    text-decoration-thickness: 3px;
+}
+ nav ul a:first-child
+{
+    color: white;
+    text-decoration-color: rgb(240, 143, 8);
+   
+}
+nav ul a:last-child
+{
+  padding-right: 15px;
+}
+ nav
+{
+    position: sticky;
+}
+main{
+    padding-top: 100px;
+}
+/*hero starts here*/
+
+.hero {
+    border-radius: 12px;
+    background-color:#5C323E;
+    background-attachment: scroll;
+   
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right:15%;
+  }
+  
+  .hero h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 58px;
+    margin-bottom: 20px;
+    color: white;
+    animation: fadeIn 2s 1s forwards;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 40px;
+    animation: scaleIn 2s 1s normal;
+  }
+/*  
+  .hero .btn {
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero .btn:hover {
+    background-color: white;
+    color: black;
+  } */
+
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: white;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px #A82743,
+     7px 7px 20px 0px #A82743,
+     4px 4px 5px 0px #A82743;
+    outline: none;
+  }
+  .btn-1{
+    position: relative;
+    font-size: 18px;
+    padding: 10px;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: none;
+    width: 130px;
+    height: 40px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px;
+  }
+  .btn-1 span {
+    background: rgb(0,172,238);
+  background: #A82743;
+    display: block;
+    position: absolute;
+    width: 130px;
+    height: 40px;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+  .btn-1 span:nth-child(1) {
+    box-shadow:
+     -7px -7px 20px 0px #fff9,
+     -4px -4px 5px 0px #fff9,
+     7px 7px 20px 0px #0002,
+     4px 4px 5px 0px #0001;
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-1 span:nth-child(2) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+  .btn-1:hover span:nth-child(1) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+  .btn-1:hover span:nth-child(2) {
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+   color: transparent;
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+  }
+    
+
+.services{
+    display:flex;
+    margin:0;
+    padding:0px;
+    min-height: 100vh;
+    background-color:inherit;
+    justify-content: center;
+    align-items: center;
+    font-family: Tahoma;
+  }
+  
+  .Services h1{
+    font-family: 'Abril Fatface', cursive;
+    text-align: center;
+    padding: 100px;
+    font-size: 40px;
+    color: white;
+  }
+ 
+  
+  .container{
+   align-self: center;
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    margin: 0 auto;
+    
+  }
+  
+  .container .card{
+    position: relative;
+   
+  }
+  
+  .container .card .face{
+    width:230px;
+    height: 200px;
+    transition:.4s;
+    border-radius: 12px;
+    
+  }
+  
+  .container .card .face.face1{
+    position: relative;
+    background:#5C323E ;
+    display: flex;
+    justify-content: center;
+    align-content:center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+  }
+  
+  .container .card:hover .face.face1{
+    transform: translateY(0);
+    box-shadow:
+      inset 0 0 60px rgb(221, 75, 7),
+      inset 20px 0 80px rgb(242, 73, 0),
+      inset -20px 0 80px rgb(136, 13, 13),
+      inset 20px 0 300px rgb(208, 13, 13),
+      inset -20px 0 300px rgb(226, 74, 9),
+      0 0 50px #ede8e8,
+      -10px 0 80px rgb(122, 11, 11),
+      10px 0 80px rgb(122, 9, 9);
+     
+  }
+  
+  
+  .container .card .face.face1 .content{
+    opacity: 100%;
+    transition:  0.5s;
+    text-align: center;
+  
+  }
+  
+  .container .card:hover .face.face1 .content{
+    opacity: 1;
+   
+  }
+  
+  .container .card .face.face1 .content i{
+    font-size: 3em;
+    color: white;
+    display: inline-block;
+     
+  }
+  
+  .container .card .face.face1 .content h3{
+    font-size: 1em;
+    color: rgb(254, 253, 253);
+    text-align: center;
+    font-size: 20px;
+    
+  
+  }
+  
+  .container .card .face.face1 .content a{
+     transition: .5s;
+  }
+  
+  .container .card .face.face2{
+     position: relative;
+     background: whitesmoke;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0,0,0,.8);
+    transform: translateY(-100px);
+  }
+  
+  .container .card:hover .face.face2{
+      transform: translateY(0);
+  
+  
+  }
+  
+  .container .card .face.face2 .content p, a{
+    font-size: 15px;
+    margin: 0 ;
+    padding: 0;
+    color:#333;
+  }
+  
+  .container .card .face.face2 .content a{
+    text-decoration:none;
+    color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    outline : 1px solid #333;
+    padding: 10px;
+    margin: 15px 0 0;
+    display: inline-block;
+    background: orangered;
+  }
+  
+  .container .card .face.face2 .content a:hover{
+    background: #333 ;
+    color: whitesmoke; 
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
+  }
+  
