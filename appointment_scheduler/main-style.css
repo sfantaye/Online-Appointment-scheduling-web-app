@@ -50,6 +50,10 @@ header
     text-decoration-color: rgb(240, 143, 8);
    
 }
+nav ul a:last-child
+{
+  padding-right: 15px;
+}
  nav
 {
     position: sticky;
