@@ -1,1 +1,50 @@
+body
+{
+    margin:0;
+    padding:0;
+     background: black; 
+    
+}
+header
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    position: fixed;
+    width: 100%;
+    margin: 0;
+}
+header ul
+{
+    display: flex;
+    list-style:none;
+    justify-content: space-evenly;
 
+}
+header ul a
+{
+    padding-left: 20px;
+    text-decoration:none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    
+    font-family: 'Abril Fatface', cursive;
+     color: rgb(209, 81, 35);
+    
+}
+header ul a:hover
+{
+    
+    color:  rgb(240, 143, 8);
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-decoration-thickness: 3px;
+}
+header ul a:first-child
+{
+    color: white;
+    text-decoration-color: rgb(240, 143, 8);
+   
+}
