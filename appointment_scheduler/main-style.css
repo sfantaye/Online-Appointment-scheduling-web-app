@@ -10,19 +10,21 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    
     position: fixed;
     width: 100%;
     margin: 0;
+    top: 0;
+    left: 0;
 }
-header ul
+ nav ul
 {
     display: flex;
     list-style:none;
     justify-content: space-evenly;
 
 }
-header ul a
+ nav ul a
 {
     padding-left: 20px;
     text-decoration:none;
@@ -34,7 +36,7 @@ header ul a
      color: rgb(209, 81, 35);
     
 }
-header ul a:hover
+ nav ul a:hover
 {
     
     color:  rgb(240, 143, 8);
@@ -42,9 +44,58 @@ header ul a:hover
     text-decoration-color: white;
     text-decoration-thickness: 3px;
 }
-header ul a:first-child
+ nav ul a:first-child
 {
     color: white;
     text-decoration-color: rgb(240, 143, 8);
    
 }
+ nav
+{
+    position: sticky;
+}
+main{
+    padding-top: 100px;
+}
+/*hero starts here*/
+
+.hero {
+    border-radius: 12px;
+    background-color:rgb(196, 88, 48);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+    margin-top: 10px;
+    margin-left: 15%;
+    margin-right:15%;
+  }
+  
+  .hero h1 {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 58px;
+    margin-bottom: 20px;
+    color: white;
+    animation: fadeIn 2s 1s forwards;
+  }
+  
+  .hero p {
+    font-size: 20px;
+    color:white;
+    margin-bottom: 40px;
+    animation: scaleIn 2s 1s normal;
+  }
+ 
+  .hero .btn {
+    display: inline-block;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .hero .btn:hover {
+    background-color: white;
+    color: black;
+  }
