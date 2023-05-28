@@ -885,4 +885,27 @@ box-shadow: inset -20px -20px 60px #2b181d,
       
     }
   }
-  
+  footer
+  {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #5c323e;
+    color:white;
+    margin:0;
+    padding: 0 30px 0 30px;
+  }
+  footer p
+  {
+    font-size: 18px;
+
+  }
+  footer ul
+  {
+    display: flex;
+    list-style-type: none;
+  }
+  footer ul a
+  {
+     padding-right: 30px;
+  }
