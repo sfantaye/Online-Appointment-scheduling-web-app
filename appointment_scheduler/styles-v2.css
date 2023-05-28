@@ -12,6 +12,11 @@ svg
   position: absolute;
   z-index: -1;
 }
+#logo
+{
+  height:80px;
+  padding-left:5px;
+}
 header
 {
     display: flex;
