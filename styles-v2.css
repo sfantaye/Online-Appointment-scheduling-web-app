@@ -57,16 +57,25 @@ header
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
- nav ul a:first-child
+.active
 {
-    color: white;
+    color: rgb(240, 143, 8);
+    text-decoration: underline;
     text-decoration-color: rgb(240, 143, 8);
+    text-decoration-thickness: 3px
    
 }
-nav ul a:last-child
-{
+header nav ul a[type="button"]{
+  box-sizing: border-box;
+  outline: 1px solid #cc4628;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color:  #A82743;
+  border-radius: 5px;
   padding-right: 15px;
+  
 }
+
  nav
 {
     position: sticky;
@@ -479,7 +488,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
 	height: 100%;
 	position: absolute;
 	transform-style: preserve-3d;
-	animation: rotation 70s infinite linear;
+	animation: rotation 50s infinite linear;
 }
 #carousel:hover{
 	animation-play-state: paused;
