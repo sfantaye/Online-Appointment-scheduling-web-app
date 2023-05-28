@@ -17,7 +17,7 @@ header
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #A82743;
+    background-color: #5C323E;
     position: fixed;
     width: 100%;
     margin: 0;
@@ -48,9 +48,8 @@ header
  nav ul a:hover
 {
     
-    color:  #5C323E;
+    color: rgb(240, 143, 8);
     text-decoration: underline;
-    text-decoration-color: #5C323E;
     text-decoration-thickness: 3px;
 }
  nav ul a:first-child
