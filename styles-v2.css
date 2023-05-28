@@ -898,12 +898,20 @@ box-shadow: inset -20px -20px 60px #2b181d,
     background: #5c323e;
     color:white;
     margin:0;
-    padding: 0 30px 0 30px;
+    padding: 40px 60px 20px 60px;
   }
   footer p
   {
     font-size: 18px;
+    font-family: 'Lato', sans-serif;
 
+  }
+  footer .social p{
+    padding-top: 70px;
+    padding-bottom: 0px;
+   
+    
+    
   }
   footer ul
   {
