@@ -783,3 +783,28 @@ main{
       bottom: 100%;
     }
   }
+   footer
+   {
+    color: white;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #5C323E;
+   }
+   footer ul
+    {
+      display:flex;
+      justify-content: space-evenly;
+      list-style:none;
+
+    }
+    footer ul a
+    {
+      padding-left: 10px;
+      
+    }
+    footer p
+    {
+      font-size: 18px;
+    }
