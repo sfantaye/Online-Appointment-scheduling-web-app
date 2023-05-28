@@ -352,7 +352,9 @@ main{
     padding: 10px;
     margin: 15px 0 0;
     display: inline-block;
-    background: orangered;
+    background: #a92743;
+    border-radius: 12px;
+    border: none;
   }
   
   .container .card .face.face2 .content a:hover{
