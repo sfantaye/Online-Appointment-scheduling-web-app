@@ -913,6 +913,10 @@ box-shadow: inset -20px -20px 60px #2b181d,
     
     
   }
+  footer h2{
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 143, 8);
+  }
   footer ul
   {
     display: flex;
