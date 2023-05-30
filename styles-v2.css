@@ -388,6 +388,9 @@ box-shadow: inset -20px -20px 60px #2b181d,
     display: inline-block;
     background-color: inherit;
     margin-bottom: 40px;
+    background-image: url('images/back22.jpg');
+    width: 100%;
+    
   }
   .features h1{
     text-align: center;
@@ -399,9 +402,9 @@ box-shadow: inset -20px -20px 60px #2b181d,
   .features .cards{
     display: flex;
     justify-content: space-between;
-    padding-left: 90px;
-    
-
+    padding-left: 20px;
+    padding-bottom: 100px;
+  
   }
   .features .cards .card {
     background-color:  #A82743;
