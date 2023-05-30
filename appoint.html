@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>A</title>
+
+  <link rel="stylesheet" type="text/css" href="css-appoint.css">
+</head>
+<body>
+  <h1>Appointment Form</h1>
+  <p>Complete The Following Form to Make Your Appointment</p>
+  
+  <form action="process_form.php" method="POST" onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    <div class="dropdown">
+      <label for="services">Services:</label>
+      <br>
+      <select id="services" name="service"> 
+        <option value="">Choose the desired service</option>
+        <option value="option1">Lawyer</option>
+        <option value="option2">Therapist</option>
+        <option value="option3">Beauty Salon</option>
+        <option value="option4">Dentist</option>
+      </select>
+    </div>  
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required><br><br>
+    
+    <label for="time">Preferred Time:</label>
+    <input type="time" id="time" name="time" required><br><br>
+    
+    <label for="comments">Comments:</label><br>
+    <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+
+  <script src="validator.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #A82743;
+    padding: 20px;
+    color: white;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  p{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+  }
+  input,textarea {
+    background-color: #c6bec0;
+  }
+
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #5C323E;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow:  20px 20px 42px #2b181d,
+    20px 20px 42px #2b181d;
+    
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  
+  input[type="submit"] {
+    background-color:#A82743;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #000000;
+  }
+  .dropdown {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #613434;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  .dropdown select {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #c6c2c2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #000000;
+  }
+
+  .dropdown select:focus {
+    outline: none;
+    border-color: #999;
+  }
+
+  .dropdown option {
+    background-color: #fff;
+    color: #333; 
+  }
