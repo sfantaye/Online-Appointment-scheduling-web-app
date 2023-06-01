@@ -25,8 +25,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $comments = $_POST["comments"];
 
     // Prepare and execute the SQL statement
-    $stmt = $conn->prepare("INSERT INTO appointment (name, email, phone, date, time,comments) VALUES (?, ?, ?, ?, ?, ?, )");
-    $stmt->bind_param("ssssss", $name, $email, $phone, $date, $time, $comments);
+    $stmt = $conn->prepare("INSERT INTO appointment (name, email, phone, date, time, service,comments) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("sssssss", $name, $email, $phone, $date, $time, $comments);
 
     if ($stmt->execute()) {
         echo "Form data inserted successfully.";
