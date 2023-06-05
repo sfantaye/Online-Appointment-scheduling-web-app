@@ -37,8 +37,8 @@ body {
   
   input[type="text"],
   input[type="email"],
-  input[type="tel"],
-  textarea {
+  input[type="tel"], input[type="date"], input[type="time"],
+  textarea{
     width: 100%;
     padding: 8px;
     border-radius: 3px;
@@ -61,7 +61,7 @@ body {
     background-color: #000000;
   }
   .dropdown {
-    width: 200px;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
