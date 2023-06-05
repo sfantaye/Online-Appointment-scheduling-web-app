@@ -1,5 +1,40 @@
+<style>
+    body{
+     background-color: gray; 
+        font-family:verdana;
+    }
+    div{
+        margin:100px;
+        padding:80px;
+        border: solid;
+        text-align:center;
+        background-color:white;
+        color:white;
+        border-radius:20px;
+        box-shadow:  20px 20px 42px #2b181d,
+                 -20px -20px 42px #8d4d5f;
+    }
+    a{
+       border: black solid;
+       text-decoration:none;
+       padding:5px;
+       background-color:black;
+       color:white;
+       border-radius:8px;
+      
+    }
+    a:hover{
+        background-color:brown;
+        border-color:brown;
+        padding:12px;
+       
+    }
+    h2{
+        color:red;
+        align: center;
+    }
+</style>
 <?php
-// Retrieve form data
 $name = sanitizeInput($_POST['name']);
 $email = sanitizeInput($_POST['email']);
 $phone = sanitizeInput($_POST['phone']);
@@ -8,7 +43,11 @@ $date = sanitizeInput($_POST['date']);
 $time = sanitizeInput($_POST['time']);
 $comments = sanitizeInput($_POST['comments']);
 
-// Function to sanitize input data
+$currentTimestamp = date('Y-m-d H:i:s');
+
+
+
+
 function sanitizeInput($data) {
     $data = trim($data);
     $data = stripslashes($data);
@@ -16,7 +55,7 @@ function sanitizeInput($data) {
     return $data;
 }
 
-// Validate form data
+
 $errors = array();
 
 if (empty($name)) {
@@ -45,38 +84,51 @@ if (empty($time)) {
     $errors[] = "Preferred time is required";
 }
 
-// If there are validation errors, display them
+
 if (!empty($errors)) {
     foreach ($errors as $error) {
         echo $error . "<br>";
     }
 } else {
-    // Database connection details
+    
     $servername = "localhost";
     $username = "root";
     $password = "";
     $dbname = "addisappointer";
 
-    // Create a new MySQLi instance
+    
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    // Check the connection
+    
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     }
 
-    // Prepare the insert statement
-    $stmt = $conn->prepare("INSERT INTO appointment (name, email, phone, date, time,service, comments) VALUES (?, ?, ?, ?, ?, ?, ?)");
-    $stmt->bind_param("sssssss", $name, $email, $phone, $date, $time, $service, $comments);
+    
+    $stmt = $conn->prepare("INSERT INTO appointment (name, email, phone, date, time,service, comments, timestamp) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
+    $stmt->bind_param("ssssssss", $name, $email, $phone, $date, $time, $service, $comments, $currentTimestamp);
 
-    // Execute the insert statement
+    
     if ($stmt->execute()) {
-        echo "Data inserted successfully!";
+        echo "
+        <div>
+        <h2>Your appointment has been scheduled successfully on!!</h2>
+        <h2>Timestamp: $currentTimestamp</h2>
+        <a type ='button' href='track_appoint.html'>Track Your Appointment</a>
+        <a type ='button' href='cancel_appoint.html'>Cancel Your Appointment</a>
+        <a type ='button' href='change_appoint.html'>Change Your Appointment</a>
+        </div>
+        ";
     } else {
-        echo "Error: " . $stmt->error;
+        echo "
+        <div>
+         <h2>Error occurred</h2>
+         <a type ='button' href='appoint.html'>Try Again</a>
+        </div>      
+        ";
     }
 
-    // Close the statement and connection
+    
     $stmt->close();
     $conn->close();
 }
