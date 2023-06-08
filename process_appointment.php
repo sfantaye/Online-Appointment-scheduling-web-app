@@ -114,7 +114,7 @@ if (!empty($errors)) {
         <div>
         <h2>Your appointment has been scheduled successfully on!!</h2>
         <h2>Timestamp: $currentTimestamp</h2>
-        <a type ='button' href='track_appoint.html'>Track Your Appointment</a>
+        <a type ='button' href='view-appointments.php'>Track Your Appointment</a>
         <a type ='button' href='cancel_appoint.html'>Cancel Your Appointment</a>
         <a type ='button' href='change_appoint.html'>Change Your Appointment</a>
         </div>

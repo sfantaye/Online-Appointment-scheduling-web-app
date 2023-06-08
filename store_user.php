@@ -13,6 +13,7 @@ if ($conn->connect_error) {
 
 // Step 3: Retrieve form data
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $name = sanitizeInput($_POST['name']);
     $username = sanitizeInput($_POST['username']);
     $email = sanitizeInput($_POST['email']);
     $password = sanitizeInput($_POST['password']);
@@ -43,8 +44,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Step 5: Store data in the database
-    $stmt = $conn->prepare('INSERT INTO users (username, email, password) VALUES (?, ?, ?)');
-    $stmt->bind_param('sss', $username, $email, $hashedPassword);
+    $stmt = $conn->prepare('INSERT INTO users (name, username, email, password) VALUES (?, ?, ?, ?)');
+    $stmt->bind_param('ssss',$name, $username, $email, $hashedPassword);
 
     if ($stmt->execute()) {
         echo '<h2>Registered Successfully!!</h2>

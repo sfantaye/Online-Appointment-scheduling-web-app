@@ -6,10 +6,17 @@ document.addEventListener('DOMContentLoaded', function() {
     event.preventDefault(); // Prevent the default link behavior
 
     // Perform form validation
+    var name = document.getElementById('name').value;
     var username = document.getElementById('username').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var confirmPassword = document.getElementById('confirmPassword').value;
+     // Validate username
+     if (name === '') {
+      alert('Please enter a username.');
+      return;
+    }
+
 
     // Validate username
     if (username === '') {
