@@ -10,16 +10,16 @@
 <body>
     <div class="login-box">
         <h2>Login</h2>
-        <form>
+        <form id ="loginForm" action="logIn_user.php" method="POST">
           <div class="user-box">
-            <input type="text" name="" required>
+            <input type="text" name="username" id ="username" required>
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required>
+            <input type="password" name="password" id = "password" required>
             <label>Password</label>
           </div>
-          <a href="#">
+          <a href="#" id = "loginButton">
             <span></span>
             <span></span>
             <span></span>
@@ -28,5 +28,6 @@
           </a>
         </form>
       </div>
+      <script src="logIn_validation.js"></script>
 </body>
 </html>

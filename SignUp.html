@@ -10,25 +10,25 @@
 <body>
     <div class="SignUp-box">
         <h2>Sign Up</h2>
-        <form>
+        <form id="signupForm" action = "store_user.php" method="POST">
           <div class="user-box">
-            <input type="text" name="" required>
+            <input type="text" name="username" id="username" required>
             <label>Username</label>
           </div>
           <div class="user-box">
-            <input type="email" name="" required>
+            <input type="email" name="email" id="email" required>
             <label>Email</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required>
+            <input type="password" name="password" id="password" required>
             <label>Password</label>
           </div>
           <div class="user-box">
-            <input type="password" name="" required>
+            <input type="password" name="confirmPassword" id="confirmPassword" required>
             <label> confirm Password</label>
           </div>
           <div class="A">
-          <a href="#">
+          <a href="#" id="signupButton" >
             <span></span>
             <span></span>
             <span></span>
@@ -38,5 +38,8 @@
           <a href="LogIn.html">Already have an account? Log In</a></div>
         </form>
       </div>
+      <script src="signUp_validation.js"></script>
+
+   
 </body>
 </html>
