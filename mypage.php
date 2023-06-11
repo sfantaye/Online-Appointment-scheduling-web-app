@@ -50,8 +50,9 @@ $name = $_SESSION['name'];
     </header>
     <main>
         <section class="hero">
-            <h1>Welcome Back, <?php echo $name; ?></h1>
+            <h1>Welcome! <?php echo $name; ?></h1>
             <div class ="appoint">
+            <a href="appoint.html" type="button">Make Appointments</a>
             <a href="view-appointments.php" type="button">View Appointments</a>
     <a  href="change-appointments.php" type="button">Change Appointments</a>
     <a  href="cancel-appointments.php"  type="button">Cancel Appointments</a>
