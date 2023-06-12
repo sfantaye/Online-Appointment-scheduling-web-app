@@ -58,7 +58,7 @@ if ($conn->connect_error) {
 
 $currentDateTime = date('Y-m-d H:i:s');
 
-$stmt = $conn->prepare('SELECT * FROM appointment a, users u WHERE a.email = u.email AND (u.username = ? AND (a.date > CURDATE() OR (a.date = CURDATE() AND a.time > CURTIME())))');
+$stmt = $conn->prepare('SELECT a.id, a.name, a.email, a.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u WHERE a.email = u.email AND (u.username = ? AND (a.date > CURDATE() OR (a.date = CURDATE() AND a.time > CURTIME())))');
 $stmt->bind_param('s', $username);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -87,7 +87,7 @@ echo "</div>";
 $stmt->close();
 
 
-$stmt = $conn->prepare('SELECT * FROM appointment a, users u WHERE a.email = u.email AND u.username = ? AND (a.date < CURDATE() OR (a.date = CURDATE() AND a.time <= CURTIME()))');
+$stmt = $conn->prepare('SELECT a.id, a.name, a.email, a.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u WHERE a.email = u.email AND u.username = ? AND (a.date < CURDATE() OR (a.date = CURDATE() AND a.time <= CURTIME()))');
 $stmt->bind_param('s', $username);
 $stmt->execute();
 $result = $stmt->get_result();
