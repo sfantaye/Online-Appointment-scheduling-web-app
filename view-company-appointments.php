@@ -32,6 +32,11 @@
     tr:hover {
         background-color: #f5f5f5;
     }
+    summary{
+        text-align: center;
+        font-family:verdana;
+        font-size:2em;
+    }
 </style>
 
 
@@ -113,6 +118,9 @@ $stmt->bind_param("s", $name);
 
 $stmt->execute();
 $result = $stmt->get_result();
+echo '<hr>';
+echo '<details>';
+echo '<summary>Display Apponiment History</summary>';
 echo "<div class='container1'";
 echo '<h1>Past Appointments</h1>';
 echo '<table border>';
@@ -132,6 +140,7 @@ while ($row = $result->fetch_assoc()) {
 }
 echo '</table>';
 echo "</div>";
+echo '</details';
 
 $stmt->close();
 
