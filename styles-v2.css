@@ -926,3 +926,35 @@ box-shadow: inset -20px -20px 60px #2b181d,
   {
      padding-right: 30px;
   }
+  @media only screen and (min-width: 890px) {
+    /* Your styles for 15-inch display */
+    .SignUp-box 
+       {
+          margin:6% auto;
+          padding:2% 4%;
+          
+          width:28%;
+        
+       }
+    .login-box 
+       {
+        margin:5% auto;
+        padding:5% 3%;
+        
+        width:30%;
+            
+       }
+     .log1
+     {
+      margin:5% auto;
+      padding:5% 3%;
+      width:30%;
+     }
+      
+
+  
+  }
+  @media only screen and (max-width: 889px)
+ {
+  
+ }
