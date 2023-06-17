@@ -940,7 +940,6 @@ box-shadow: inset -20px -20px 60px #2b181d,
        {
         margin:5% auto;
         padding:5% 3%;
-        
         width:30%;
             
        }
@@ -956,5 +955,5 @@ box-shadow: inset -20px -20px 60px #2b181d,
   }
   @media only screen and (max-width: 889px)
  {
-  
+
  }
