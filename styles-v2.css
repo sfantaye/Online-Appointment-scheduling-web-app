@@ -44,7 +44,7 @@ header
     text-decoration:none;
     text-align: center;
     font-weight:50;
-    font-size: 1.5rem;
+    font-size: 1em;
     
     font-family: 'Abril Fatface', cursive;
     color: white;
@@ -111,7 +111,7 @@ main{
   
   .hero h1 {
     font-family: 'Abril Fatface', cursive;
-    font-size:3rem;
+    font-size:2.5rem;
     margin-bottom: 2%;
     color: white;
     animation: fadeIn 2s 1s forwards;
@@ -119,7 +119,7 @@ main{
   
   .hero p {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: white;
     padding-bottom: 8%;
     animation: scaleIn 2s 1s normal;
@@ -142,10 +142,11 @@ main{
   .custom-btn {
     width: 13%;
     height: 5%;
+    margin-left: 5%;
     margin-right: 4%;
     color: white;
     border-radius: 5px;
-    padding: 1% 2.5%;
+    padding: 1% 3%;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -160,7 +161,7 @@ main{
   }
   .btn-1{
     position: relative;
-    font-size: 1.33rem;
+    font-size: 1.1rem;
     padding: 1%;
     right: 20px;
     bottom: 20px;
