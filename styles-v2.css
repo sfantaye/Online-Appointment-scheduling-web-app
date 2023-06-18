@@ -9,16 +9,10 @@ body
      background: #A82743; 
     
 }
-svg
-{
-  width: 100%;
-  height: 120vh;
-  position: absolute;
-  z-index: -1;
-}
+
 #logo
 {
-  height:80px;
+  height:3.5rem;
   padding-left:5px;
 }
 header
@@ -32,7 +26,9 @@ header
     margin: 0;
     top: 0;
     left: 0;
+    right:0;
     z-index: 2;
+   
 }
 
  nav ul
@@ -44,11 +40,11 @@ header
 }
  nav ul a
 {
-    padding-left: 20px;
+    padding-left: 2%;
     text-decoration:none;
     text-align: center;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight:50;
+    font-size: 1.15rem;
     
     font-family: 'Abril Fatface', cursive;
     color: white;
@@ -61,22 +57,29 @@ header
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
+ nav ul :last-child:hover
+{
+    
+    color: rgb(240, 143, 8);
+    text-decoration:none;
+    text-decoration-thickness: 3px;
+}
 .active
 {
     color: rgb(240, 143, 8);
     text-decoration: underline;
     text-decoration-color: rgb(240, 143, 8);
-    text-decoration-thickness: 3px
+    text-decoration-thickness: 3px;
    
 }
 header nav ul a[type="button"]{
   box-sizing: border-box;
   outline: 1px solid #cc4628;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 4%;
+  margin-right: 15%;
   background-color:  #A82743;
   border-radius: 5px;
-  padding-right: 15px;
+  padding-right: 1.5%;
   
 }
 
@@ -99,24 +102,26 @@ main{
     box-shadow:  20px 20px 42px #2b181d,
                  -20px -20px 42px #8d4d5f;
     text-align: center;
-    padding: 80px 20px;
-    margin-top: 10px;
-    margin-left: 15%;
-    margin-right:15%;
+    padding:2%;
+    padding-bottom:3%;
+    margin-top: 3%;
+    margin-left:20%;
+    margin-right:20%;
   }
   
   .hero h1 {
     font-family: 'Abril Fatface', cursive;
-    font-size: 58px;
-    margin-bottom: 20px;
+    font-size:3rem;
+    margin-bottom: 2%;
     color: white;
     animation: fadeIn 2s 1s forwards;
   }
   
   .hero p {
-    font-size: 20px;
+    text-align: center;
+    font-size: 1rem;
     color: white;
-    margin-bottom: 40px;
+    padding-bottom: 8%;
     animation: scaleIn 2s 1s normal;
   }
   .side
@@ -128,15 +133,18 @@ main{
   }
   .side p
   {
-    padding-right: 80px;
+    padding-right: 8%;
   }
-
+  #cal
+  {
+    height: 7rem;
+  }
   .custom-btn {
-    width: 130px;
-    height: 40px;
+    width: 13%;
+    height: 4%;
     color: white;
     border-radius: 5px;
-    padding: 10px 25px;
+    padding: 1% 2.5%;
     font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
@@ -151,8 +159,8 @@ main{
   }
   .btn-1{
     position: relative;
-    font-size: 18px;
-    padding: 10px;
+    font-size: 1rem;
+    padding: 1%;
     right: 20px;
     bottom: 20px;
     border:none;
@@ -168,8 +176,8 @@ main{
   background: #A82743;
     display: block;
     position: absolute;
-    width: 130px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
@@ -220,12 +228,12 @@ main{
     -moz-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
   }
-    
 
 .services{
     display:flex;
     margin:0;
     padding:0px;
+    
     min-height: 100vh;
     background-color:inherit;
     justify-content: center;
@@ -236,9 +244,9 @@ main{
   .Services h1{
     font-family: 'Abril Fatface', cursive;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 6%;
     padding-bottom: 0px;
-    font-size: 3em;
+    font-size: 2.5rem;
     color: white;
     font-weight: 400;
   }
@@ -246,23 +254,27 @@ main{
   
   .container{
    align-self: center;
-    width: 1000px;
+    width: 75%;
     position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap:wrap;
-    margin:0 auto;
+    margin:auto;
+  
     
   }
   
   .container .card{
     position: relative;
+    margin-bottom:16%;
+    margin-top: 10%;
+    
    
   }
   
   .container .card .face{
-    width:230px;
-    height: 200px;
+    width:100%;
+    height: 91.65%;
     transition:.4s;
     border-radius: 12px;
     
@@ -321,7 +333,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
     font-size: 1em;
     color: rgb(254, 253, 253);
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     
   
   }
@@ -488,8 +500,8 @@ box-shadow: inset -20px -20px 60px #2b181d,
 #carousel figure{
 	display: block;
 	position: absolute;
-	width: 204px;
-	height: 250px;
+	width: 95%;
+	height: 180%;
 	left: 10px;
 	top: 10px;
 	background: #5C323E;
@@ -861,6 +873,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
   /*hr style*/
 
   .color-changing {
+    margin-top: 8%;
     width: 50%;
     height: 3px;
     background-color: #f2f2f2;
@@ -926,8 +939,9 @@ box-shadow: inset -20px -20px 60px #2b181d,
   {
      padding-right: 30px;
   }
+  
   @media only screen and (min-width: 890px) {
-    /* Your styles for 15-inch display */
+   
     .SignUp-box 
        {
           margin:6% auto;
@@ -953,7 +967,63 @@ box-shadow: inset -20px -20px 60px #2b181d,
 
   
   }
-  @media only screen and (max-width: 889px)
- {
+  
+  @media screen and (max-width:600px)
+  {
+    .SignUp-box 
+    {
+       margin:6% auto;
+       padding:2% 4%;
+       
+       width:28%;
+     
+    }
+ .login-box 
+    {
+     margin:5% auto;
+     padding:5% 3%;
+     width:30%;
+         
+    }
+  .log1
+  {
+   margin:5% auto;
+   padding:5% 3%;
+   width:30%;
+  }
+   
+    
+   
+    .container
+    {
+      margin-bottom: 29%;
+    }
+   
+    .hero
+    {
+      margin-top: 3%;
+      margin-left:5%;
+      margin-right:5%;
+    }
+    .side
+    { 
+      margin: 0 auto;
+      padding:0;
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: column;
+      align-items: center;
+    
+    }
+    #cal
+    {
+      display: none;
+    }
+    .side p
+    { 
 
- }
+      text-align: center;
+      margin:0;
+      
+    }
+  }
