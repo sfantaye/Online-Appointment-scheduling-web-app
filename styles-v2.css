@@ -970,11 +970,15 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+    .testimonials
+    {
+      max-width: 80%;
+    }
     .SignUp-box 
     {
        margin:5% auto;
        padding:2% 4%;
-       background: black;
+       
        width:65vw;
      
     }
@@ -991,11 +995,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
    padding:5% 3%;
    width:85%;
   }
-   footer
-   {
-
-   }
-    
+   
    
     .container
     {
@@ -1004,9 +1004,9 @@ box-shadow: inset -20px -20px 60px #2b181d,
    
     .hero
     {
+       margin:10%;
       margin-top: 3%;
-      margin-left:5%;
-      margin-right:5%;
+    
     }
     .side
     { 
