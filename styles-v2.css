@@ -972,10 +972,10 @@ box-shadow: inset -20px -20px 60px #2b181d,
   {
     .SignUp-box 
     {
-       margin: auto;
+       margin:5% auto;
        padding:2% 4%;
        
-       width:55%;
+       width:65vw;
      
     }
  .login-box 
