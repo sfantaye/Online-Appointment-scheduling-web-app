@@ -974,7 +974,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
     {
        margin:5% auto;
        padding:2% 4%;
-       
+       background: black;
        width:65vw;
      
     }
@@ -982,14 +982,14 @@ box-shadow: inset -20px -20px 60px #2b181d,
     {
      margin:5% auto;
      padding:5% 3%;
-     width:55%;
+     width:85vw;
          
     }
   .log1
   {
    margin:5% auto;
    padding:5% 3%;
-   width:50%;
+   width:85%;
   }
    footer
    {
