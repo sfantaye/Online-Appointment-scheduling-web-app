@@ -44,8 +44,8 @@ header
     text-decoration:none;
     text-align: center;
     font-weight:50;
-    font-size: 1em;
-    
+    font-size: 1.12em;
+    margin-right:1%;
     font-family: 'Abril Fatface', cursive;
     color: white;
     
@@ -57,12 +57,17 @@ header
     text-decoration: underline;
     text-decoration-thickness: 3px;
 }
- nav ul :last-child:hover
+ nav ul:last-child:hover
 {
     
     color: rgb(240, 143, 8);
     text-decoration:none;
-    text-decoration-thickness: 3px;
+    
+  
+}
+nav ul:last-child
+{
+  
 }
 .active
 {
