@@ -908,45 +908,48 @@ box-shadow: inset -20px -20px 60px #2b181d,
   }
   footer
   {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
     
     background: #5c323e;
     color:white;
     margin-top:110px;
-    padding: 40px 60px 20px 60px;
+    padding: 40px 10px 20px 10px;
+  }
+  .contacts
+  {
+    display: block;
+  }
+  .fcontent
+  {
+      display: flex;
+      justify-content: space-between;
   }
  
   footer p
   {
+    text-align: center;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
 
   }
-  footer .social p{
-    padding-top: 70px;
-    padding-bottom: 0px;
-
-    
-    
-  }
+  
   footer h2{
     text-decoration: underline;
     text-decoration-color: rgb(240, 143, 8);
   }
   footer ul
   {
+    padding-top: 10%;
     display: flex;
     list-style-type: none;
   }
   footer ul a
   {
+
      padding-right: 30px;
   }
   
   @media only screen and (min-width: 890px) {
-   
+     
     .SignUp-box 
        {
           margin:6% auto;
@@ -975,6 +978,10 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+     .fcontent
+     {
+      flex-direction: column;
+     }
     .testimonials
     {
       max-width: 80%;
