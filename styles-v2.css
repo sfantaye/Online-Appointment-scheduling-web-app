@@ -50,6 +50,10 @@ header
     color: white;
     
 }
+.bar
+{
+  display: none;
+}
  nav ul a:hover
 {
     
@@ -503,7 +507,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
 #carousel figure{
 	display: block;
 	position: absolute;
-	width: 95%;
+	width: 90%;
 	height: 180%;
 	left: 10px;
 	top: 10px;
@@ -978,6 +982,32 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+    header
+    {
+      width: 100vw;
+      margin: 0;
+    }
+    main
+    {
+      margin: 0;
+    }
+    footer
+    {
+      margin: 0;
+    }
+    .bar
+    {
+      display:initial;
+      margin-right: 3%;
+      scale: 2.0;
+      background-color: #A82743;
+      padding: 0.5% 0.8%;
+      border-radius: 14%;
+    }
+    nav
+    {
+      display: none;
+    }
     .custom-btn
     {
       width: 20%;
@@ -998,8 +1028,10 @@ box-shadow: inset -20px -20px 60px #2b181d,
     .testimonials
     {
       
-      margin-left: 10%;
-      max-width: 40%;
+      margin-left: 2%;
+      max-width: 100%;
+      max-height: 100%;
+     
     }
     .testimonials h1
     {
