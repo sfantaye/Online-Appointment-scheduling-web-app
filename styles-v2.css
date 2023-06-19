@@ -978,6 +978,19 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+    .custom-btn
+    {
+      width: 20%;
+      font-size: 0.7em;
+    }
+    .hero h1
+    {
+      font-size: 2rem;
+    }
+    .hero h1
+    {
+      font-family: 1rem;
+    }
      .fcontent
      {
       flex-direction: column;
