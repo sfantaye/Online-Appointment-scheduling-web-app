@@ -50,6 +50,10 @@ header
     color: white;
     
 }
+.bar
+{
+  display: none;
+}
  nav ul a:hover
 {
     
@@ -508,7 +512,7 @@ box-shadow: inset -20px -20px 60px #2b181d,
 #carousel figure{
 	display: block;
 	position: absolute;
-	width: 95%;
+	width: 90%;
 	height: 180%;
 	left: 10px;
 	top: 10px;
@@ -913,45 +917,48 @@ box-shadow: inset -20px -20px 60px #2b181d,
   }
   footer
   {
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
     
     background: #5c323e;
     color:white;
     margin-top:110px;
-    padding: 40px 60px 20px 60px;
+    padding: 40px 10px 20px 10px;
+  }
+  .contacts
+  {
+    display: block;
+  }
+  .fcontent
+  {
+      display: flex;
+      justify-content: space-between;
   }
  
   footer p
   {
+    text-align: center;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
 
   }
-  footer .social p{
-    padding-top: 70px;
-    padding-bottom: 0px;
-
-    
-    
-  }
+  
   footer h2{
     text-decoration: underline;
     text-decoration-color: rgb(240, 143, 8);
   }
   footer ul
   {
+    padding-top: 10%;
     display: flex;
     list-style-type: none;
   }
   footer ul a
   {
+
      padding-right: 30px;
   }
   
   @media only screen and (min-width: 890px) {
-   
+     
     .SignUp-box 
        {
           margin:6% auto;
@@ -980,9 +987,60 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+    header
+    {
+      width: 100vw;
+      margin: 0;
+    }
+    main
+    {
+      margin: 0;
+    }
+    footer
+    {
+      margin: 0;
+    }
+    .bar
+    {
+      display:initial;
+      margin-right: 3%;
+      scale: 2.0;
+      background-color: #A82743;
+      padding: 0.5% 0.8%;
+      border-radius: 14%;
+    }
+    nav
+    {
+      display: none;
+    }
+    .custom-btn
+    {
+      width: 20%;
+      font-size: 0.7em;
+    }
+    .hero h1
+    {
+      font-size: 2rem;
+    }
+    .hero h1
+    {
+      font-family: 1rem;
+    }
+     .fcontent
+     {
+      flex-direction: column;
+     }
     .testimonials
     {
-      max-width: 80%;
+      
+      margin-left: 2%;
+      max-width: 100%;
+      max-height: 100%;
+     
+    }
+    .testimonials h1
+    {
+      padding-bottom: 10%;
     }
     .SignUp-box 
     {
