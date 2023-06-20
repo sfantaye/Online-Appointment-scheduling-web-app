@@ -58,7 +58,7 @@ if ($conn->connect_error) {
 
 $currentDateTime = date('Y-m-d H:i:s');
 
-$stmt = $conn->prepare('SELECT a.id, a.name, a.email, a.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u WHERE a.email = u.email AND (u.username = ? AND (a.date > CURDATE() OR (a.date = CURDATE() AND a.time > CURTIME())))');
+$stmt = $conn->prepare('SELECT a.id,s.companyName, s.address, s.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u, service s WHERE a.email = u.email AND a.service = s.name AND u.username = ? AND (a.date > CURDATE() OR (a.date = CURDATE() AND a.time >= CURTIME()))');
 $stmt->bind_param('s', $username);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -67,17 +67,16 @@ echo '<hr>';
 echo"<div class='container'";
 echo '<h1>Future Appointments</h1>';
 echo '<table border>';
-echo '<tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Date</th><th>Time</th><th>Service</th><th>Comments</th><th>Timestamp</th></tr>';
+echo '<tr><th>ID</th><th>Company Name</th><th>Phone</th><th>Date</th><th>Time</th><th>Service</th><th>Comments</th><th>Timestamp</th></tr>';
 while ($row = $result->fetch_assoc()) {
     echo '<tr>';
     echo '<td>' . $row['id'] . '</td>';
-    echo '<td>' . $row['name'] . '</td>';
-    echo '<td>' . $row['email'] . '</td>';
+    echo '<td>' . $row['companyName'] . '</td>';
     echo '<td>' . $row['phone'] . '</td>';
     echo '<td>' . $row['date'] . '</td>';
     echo '<td>' . $row['time'] . '</td>';
     echo '<td>' . $row['service'] . '</td>';
-    echo '<td>' . $row['comments'] . '</td>';
+    echo '<td>' . $row['address'] . '</td>';
     echo '<td>' . $row['timestamp'] . '</td>';
     echo '</tr>';
 }
@@ -87,24 +86,23 @@ echo "</div>";
 $stmt->close();
 
 
-$stmt = $conn->prepare('SELECT a.id, a.name, a.email, a.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u WHERE a.email = u.email AND u.username = ? AND (a.date < CURDATE() OR (a.date = CURDATE() AND a.time <= CURTIME()))');
+$stmt = $conn->prepare('SELECT a.id,s.companyName, s.address, s.phone, a.date, a.time, a.service, a.comments, a.timestamp FROM appointment a, users u, service s WHERE a.email = u.email AND a.service = s.name AND u.username = ? AND (a.date < CURDATE() OR (a.date = CURDATE() AND a.time <= CURTIME()))');
 $stmt->bind_param('s', $username);
 $stmt->execute();
 $result = $stmt->get_result();
 echo "<div class='container1'";
 echo '<h1>Past Appointments</h1>';
 echo '<table border>';
-echo '<tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Date</th><th>Time</th><th>Service</th><th>Comments</th><th>Timestamp</th></tr>';
+echo '<tr><th>ID</th><th>Company Name</th><th>Phone</th><th>Date</th><th>Time</th><th>Service</th><th>Address</th><th>Timestamp</th></tr>';
 while ($row = $result->fetch_assoc()) {
     echo '<tr>';
     echo '<td>' . $row['id'] . '</td>';
-    echo '<td>' . $row['name'] . '</td>';
-    echo '<td>' . $row['email'] . '</td>';
+    echo '<td>' . $row['companyName'] . '</td>';
     echo '<td>' . $row['phone'] . '</td>';
     echo '<td>' . $row['date'] . '</td>';
     echo '<td>' . $row['time'] . '</td>';
     echo '<td>' . $row['service'] . '</td>';
-    echo '<td>' . $row['comments'] . '</td>';
+    echo '<td>' . $row['address'] . '</td>';
     echo '<td>' . $row['timestamp'] . '</td>';
     echo '</tr>';
 }
