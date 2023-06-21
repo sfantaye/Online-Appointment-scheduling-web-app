@@ -30,7 +30,7 @@
        
     }
     h2{
-        color:red;
+        color:green;
         align: center;
     }
 
