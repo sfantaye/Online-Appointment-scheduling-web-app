@@ -50,10 +50,7 @@ header
     color: white;
     
 }
-.bar
-{
-  display: none;
-}
+
  nav ul a:hover
 {
     
@@ -987,6 +984,10 @@ box-shadow: inset -20px -20px 60px #2b181d,
   
   @media screen and (max-width:600px)
   {
+    nav ul
+    {
+      flex-direction:row;
+    }
     header
     {
       width: 100vw;
@@ -1000,19 +1001,8 @@ box-shadow: inset -20px -20px 60px #2b181d,
     {
       margin: 0;
     }
-    .bar
-    {
-      display:initial;
-      margin-right: 3%;
-      scale: 2.0;
-      background-color: #A82743;
-      padding: 0.5% 0.8%;
-      border-radius: 14%;
-    }
-    nav
-    {
-      display: none;
-    }
+   
+    
     .custom-btn
     {
       width: 20%;
